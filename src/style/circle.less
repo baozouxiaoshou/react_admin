@@ -1,0 +1,63 @@
+.box{
+  position: relative;
+}
+.progressbar{
+  width: 100%;
+  height: 100%;
+  border: solid;
+  border-radius: 50%;
+}
+.left-container,.right-container{
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.left-container{
+  left: 0;
+}
+.right-container{
+  right: 0;
+}
+.left-circle,.right-circle{
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid transparent;
+  box-sizing: border-box;
+  transform: rotate(136deg);
+}
+.left-circle{
+  left: 0;
+}
+.right-circle{
+  right: 0;
+}
+.progressNumber{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.progressNumber:after{
+  display: inline-block;
+  content: '';
+  height: 100%;
+  vertical-align: middle;
+}
+.progressNumber span {
+  font-weight: 500;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+
